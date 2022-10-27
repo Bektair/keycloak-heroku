@@ -1,6 +1,6 @@
 FROM jboss/keycloak:latest
 
-COPY zombieTheme /opt/jboss/keycloak/themes/
+ADD zombieTheme /opt/jboss/keycloak/themes/zombieTheme
 
 COPY docker-entrypoint.sh /opt/jboss/tools
 
