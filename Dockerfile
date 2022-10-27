@@ -1,4 +1,6 @@
-FROM bektair/keycloak_for_ous:latest
+FROM jboss/keycloak:latest
+
+COPY zombieTheme /opt/jboss/keycloak/themes/
 
 COPY docker-entrypoint.sh /opt/jboss/tools
 
